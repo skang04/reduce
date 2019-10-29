@@ -1,0 +1,137 @@
+@media (max-width:575px) {
+    $limegreen: #8E8E8E;
+    $darkgreen: #2D2D2D;
+
+    .container {
+        display: grid;
+        grid-template-columns: 180px 1fr;
+        grid-template-rows: repeat(4, 180px);
+    }
+
+    // first row
+
+    .reuse {
+        display: none;
+    }
+
+    .text {
+        background-color: $limegreen;
+    }
+
+
+    .recycle {
+        margin-top: 20px;
+        padding: 0 10px;
+        display: block;
+        color: $darkgreen;
+        font-family: Hepta Slab;
+        font-weight: 800;
+        line-height: 70px;
+        letter-spacing: 1vw;
+        font-size: 14vw;
+        text-align: left;
+        hyphens: auto;
+    }
+
+    .arrow {
+        background-color: $darkgreen;
+    }
+
+    .reduceArrow {
+        display: none;
+    }
+
+    .reuseArrow {
+        display: none;
+    }
+
+    .recycleArrow {
+        opacity: 1;
+        fill: white;
+    }
+
+
+    .leaf2 {
+        display: none;
+    }
+
+    .topLeaf {
+        background-color: $limegreen;
+    }
+
+    .deadLeaf {
+        fill: $darkgreen;
+    }
+
+    .BlueBird {
+        display: none;
+    }
+
+    .leftBird {
+        background-color: #512828;
+
+    }
+
+    .deadBird {
+        display: block;
+        fill: #619DD8;
+        animation: rotate .5s ease-in-out;
+        transform-origin: center;
+    }
+
+    @keyframes rotate {
+        0% {
+            transform: rotate(180deg);
+        }
+
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+
+    .deadBird-eyes {
+        fill: #172149;
+    }
+
+
+    .water {
+        grid-column: 2/-1;
+    }
+
+    .reuseWater {
+        display: none;
+    }
+
+    .recycleWater {
+        display: block;
+        width: 340px;
+    }
+
+    .heart {
+        display: none;
+    }
+
+    .BlueKiss {
+        display: none;
+    }
+
+
+    // third row
+
+    .YellowKiss {
+        display: none;
+    }
+
+    .YellowBird {
+        display: none;
+    }
+
+    .bottomLeft {
+        background-color: $darkgreen;
+    }
+
+    .plasticBag {
+        display: block;
+        fill: #63D6B5;
+    }
+}
