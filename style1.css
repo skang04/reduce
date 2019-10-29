@@ -1,0 +1,231 @@
+* {
+  -webkit-transition: opacity .4s;
+  transition: opacity .4s;
+}
+
+body {
+  margin: 0 0;
+  font-size: 16px;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (180px)[3] 1fr 180px;
+      grid-template-columns: repeat(3, 180px) 1fr 180px;
+  -ms-grid-rows: (180px)[4];
+      grid-template-rows: repeat(4, 180px);
+}
+
+.reuseFlowerGreen {
+  fill: #52B564;
+}
+
+/* 1st row */
+.arrow {
+  background-color: #52B564;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+.reduceArrow {
+  fill: white;
+}
+
+@-webkit-keyframes;
+
+@keyframes;
+.reuseArrow {
+  opacity: 0;
+}
+
+.recycleArrow {
+  opacity: 0;
+}
+
+.background {
+  opacity: 0;
+}
+
+.flower {
+  background-color: #1D4925;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+.leaf2 {
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-animation: grow 1s ease-in-out infinite alternate;
+          animation: grow 1s ease-in-out infinite alternate;
+}
+
+.leaf-3 {
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-animation: grow 4s ease-in-out infinite alternate;
+          animation: grow 4s ease-in-out infinite alternate;
+}
+
+.text {
+  background-color: #52B564;
+  grid-column: 3/-1;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+.reduce {
+  color: #1D4925;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: 180px;
+  letter-spacing: 1vw;
+  font-size: 15vw;
+  text-align: center;
+}
+
+/* 2nd row */
+.leaf {
+  fill: #1D4925;
+}
+
+.deadBird {
+  display: none;
+}
+
+.topLeaf {
+  background-color: #52B564;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+
+.heart {
+  background-color: #1D4925;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+
+.leaf3 {
+  background-color: #52B564;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+
+.water {
+  background-color: #172149;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4/5;
+  grid-row: 2/-1;
+  fill: none;
+  stroke: #619DD8;
+  stroke-width: 69px;
+  overflow: hidden;
+}
+
+.reduceWater {
+  width: 800px;
+}
+
+.reuseWater {
+  display: none;
+}
+
+.recycleWater {
+  display: none;
+}
+
+.YellowFlower {
+  background-color: #1D4925;
+  grid-column: -1/-2;
+  grid-row: 2/-1;
+}
+
+/* third row */
+.bottomLeft {
+  background-color: #52B564;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  grid-row: -1/-2;
+}
+
+.plasticBag {
+  display: none;
+}
+
+.YellowKiss {
+  display: block;
+}
+
+.leftBird {
+  background: #1D4925;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+}
+
+.BlueKiss {
+  background: #1D4925;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+}
+
+.PinkBird {
+  background-color: #1D4925;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+}
+
+.YellowBeak-1 {
+  fill: #420F0F;
+}
+
+.YellowBird {
+  background: #1D4925;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  grid-row: -1/-2;
+}
+
+.flower3 {
+  background-color: #52B564;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  grid-row: -1/-2;
+}
+/*# sourceMappingURL=style1.css.map */

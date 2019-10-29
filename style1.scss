@@ -1,0 +1,190 @@
+$limegreen: #52B564;
+$darkgreen: #1D4925;
+
+* {
+    transition: all .4s;
+
+}
+
+
+body {
+    margin: 0 0;
+    font-size: 16px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 180px) 1fr 180px;
+    grid-template-rows: repeat(4, 180px);
+}
+
+.reuseFlowerGreen {
+    fill: $limegreen;
+}
+
+/* 1st row */
+.arrow {
+    background-color: $limegreen;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.reduceArrow {
+    fill: white;
+    @keyframes
+}
+
+
+.reuseArrow {
+    opacity: 0;
+}
+
+.recycleArrow {
+    opacity: 0;
+}
+
+.background {
+    opacity: 0;
+}
+
+.flower {
+    background-color: $darkgreen;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.leaf2 {
+    transform-origin: bottom;
+    animation: grow 1s ease-in-out infinite alternate;
+}
+
+.leaf-3 {
+    transform-origin: bottom;
+    animation: grow 4s ease-in-out infinite alternate; 
+}
+
+.text {
+    background-color: $limegreen;
+    grid-column: 3/-1;
+    grid-row: 1/2;
+}
+
+.reduce {
+    color: #1D4925;
+    font-family: Poppins;
+    font-weight: 400;
+    line-height: 180px;
+    letter-spacing: 1vw;
+    font-size: 15vw;
+    text-align: center;
+}
+
+
+/* 2nd row */
+
+.leaf {
+    fill: $darkgreen;
+}
+
+.deadBird {
+    display: none;
+}
+
+.topLeaf {
+    background-color: $limegreen;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+
+.heart {
+    background-color: $darkgreen;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+
+.leaf3 {
+    background-color: $limegreen;
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.water {
+    background-color: #172149;
+    grid-column: 4/5;
+    grid-row: 2/-1;
+    fill: none;
+    stroke: #619DD8;
+    stroke-width: 69px;
+    overflow: hidden;
+}
+
+.reduceWater {
+    width: 800px;
+}
+
+.reuseWater {
+    display: none;
+}
+.recycleWater {
+    display:none;
+}
+
+.YellowFlower {
+    background-color: $darkgreen;
+    grid-column: -1/-2;
+    grid-row: 2/-1;
+}
+
+/* third row */
+
+.bottomLeft {
+    background-color: $limegreen;
+    grid-column: 1/2;
+    grid-row: -1/-2;
+}
+
+.plasticBag {
+    display: none;
+}
+
+.YellowKiss {
+    display: block;
+}
+
+.leftBird {
+    background: $darkgreen;
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.BlueKiss {
+    background: $darkgreen;
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.PinkBird {
+    background-color: $darkgreen;
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+
+
+.YellowBeak-1 {
+    fill: #420F0F;
+}
+
+.YellowBird {
+    background: $darkgreen;
+    grid-column: 2/3;
+    grid-row: -1/-2;
+}
+
+.flower3 {
+    background-color: $limegreen;
+    grid-column: 3/4;
+    grid-row: -1/-2;
+}

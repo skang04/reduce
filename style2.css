@@ -1,0 +1,110 @@
+@media (max-width: 950px) {
+  .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (180px)[2] 1fr;
+        grid-template-columns: repeat(2, 180px) 1fr;
+    -ms-grid-rows: (180px)[4];
+        grid-template-rows: repeat(4, 180px);
+  }
+  .arrow {
+    background-color: #34471C;
+  }
+  .reduceArrow {
+    display: none;
+  }
+  .reuseArrow {
+    fill: white;
+    opacity: 1;
+  }
+  .recycleArrow {
+    opacity: 0;
+  }
+  .flower {
+    display: none;
+  }
+  .text {
+    background-color: #BEE041;
+    grid-column: 2/-1;
+  }
+  .reduce {
+    display: none;
+  }
+  .reuse {
+    color: #34471C;
+    font-family: oswald;
+    font-weight: bold;
+    line-height: 160px;
+    letter-spacing: 1.5vw;
+    font-size: 24vw;
+    text-align: center;
+  }
+  .recycle {
+    display: none;
+  }
+  .reuseFlowerGreen {
+    fill: #BEE041;
+    -webkit-transform-origin: bottom;
+            transform-origin: bottom;
+    -webkit-animation: grow 3s ease-in-out infinite alternate;
+            animation: grow 3s ease-in-out infinite alternate;
+  }
+  .leaf {
+    fill: #34471C;
+  }
+  .topLeaf {
+    background-color: #BEE041;
+  }
+  .leaf2 {
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  .leaf3 {
+    display: none;
+  }
+  .water {
+    grid-column: 3/-1;
+    grid-row: 2/-1;
+  }
+  .reduceWater {
+    display: none;
+  }
+  .reuseWater {
+    display: block;
+    width: 800px;
+  }
+  .heart {
+    background: #34471C;
+  }
+  .love {
+    display: none;
+  }
+  .leftBird {
+    background: #34471C;
+  }
+  .BlueKiss {
+    background: #34471C;
+  }
+  .YellowBird {
+    background-color: #34471C;
+  }
+  .YellowBeak-1 {
+    display: none;
+  }
+  .bottomLeft {
+    background-color: #BEE041;
+  }
+  .YellowFlower {
+    display: none;
+  }
+  .PinkBird {
+    display: none;
+  }
+  .PinkBeak {
+    display: none;
+  }
+  .flower3 {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style2.css.map */
