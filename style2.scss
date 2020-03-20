@@ -1,11 +1,11 @@
-@media (max-width:950px) {
+@media (max-width:1200px) {
     $limegreen: #BEE041;
     $darkgreen: #34471C;
 
     .container {
         display: grid;
-        grid-template-columns: repeat(2, 180px) 1fr;
-        grid-template-rows: repeat(4, 180px);
+        grid-template-columns: repeat(2, calc(100vh/4)) 1fr;
+        grid-template-rows: repeat(4, calc(100vh/4));
     }
 
     .arrow {
@@ -41,13 +41,15 @@
     }
 
     .reuse {
+        display: block;
         color: $darkgreen;
         font-family: oswald;
         font-weight: bold;
         line-height: 160px;
         letter-spacing: 1.5vw;
-        font-size: 24vw;
+        font-size: 20vw;
         text-align: center;
+        padding-top: 20px;
     }
 
     .recycle {
@@ -66,7 +68,7 @@
     .leaf {
         fill: $darkgreen;
     }
-    
+
     .topLeaf {
         background-color: $limegreen;
     }
@@ -82,20 +84,26 @@
     }
 
     .water {
+        background: #174736;
         grid-column: 3/-1;
         grid-row: 2/-1;
     }
 
     .reduceWater {
-        display: none;
+        background: #174736;
     }
 
-    .reuseWater {
-        display: block;
-        width: 800px;
+
+    .waterStroke {
+        overflow: visible;
+        animation: dash 30s linear infinite;
+        stroke-dasharray: 60;
+        stroke: #63D6B5;
+        stroke-width: 20px;
+        stroke-miterlimit: 10;
     }
 
-    .heart {
+.heart {
         background: $darkgreen;
     }
 

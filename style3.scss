@@ -1,11 +1,15 @@
-@media (max-width:575px) {
+@media (max-width:675px) {
     $limegreen: #8E8E8E;
     $darkgreen: #2D2D2D;
 
+     * {
+        margin: 0;
+     }
     .container {
+        margin: 0;
         display: grid;
-        grid-template-columns: 180px 1fr;
-        grid-template-rows: repeat(4, 180px);
+        grid-template-columns: calc(100vh/4) 1fr;
+        grid-template-rows: repeat(4, calc(100vh/4));
     }
 
     // first row
@@ -20,15 +24,15 @@
 
 
     .recycle {
-        margin-top: 20px;
-        padding: 0 10px;
+        width: 100%;
+        padding: 40px 0 0 30px;
         display: block;
         color: $darkgreen;
         font-family: Hepta Slab;
         font-weight: 800;
-        line-height: 70px;
+        line-height: 80px;
         letter-spacing: 1vw;
-        font-size: 14vw;
+        font-size: 11vw;
         text-align: left;
         hyphens: auto;
     }
@@ -81,7 +85,7 @@
 
     @keyframes rotate {
         0% {
-            transform: rotate(180deg);
+            transform: rotate(45deg);
         }
 
         100% {
@@ -98,13 +102,25 @@
         grid-column: 2/-1;
     }
 
-    .reuseWater {
+
+
+    .reduceWater {
         display: none;
+    }
+
+
+    .waterStroke {
+        animation: 0s;
     }
 
     .recycleWater {
         display: block;
-        width: 340px;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .water {
+        background-color: #424217;
     }
 
     .heart {

@@ -14,8 +14,8 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: repeat(3, 180px) 1fr 180px;
-    grid-template-rows: repeat(4, 180px);
+    grid-template-columns: repeat(3, calc(100vh/4)) 1fr calc(100vh/4);
+    grid-template-rows: repeat(4, calc(100vh/4));
 }
 
 .reuseFlowerGreen {
@@ -31,7 +31,6 @@ body {
 
 .reduceArrow {
     fill: white;
-    @keyframes
 }
 
 
@@ -60,7 +59,7 @@ body {
 
 .leaf-3 {
     transform-origin: bottom;
-    animation: grow 4s ease-in-out infinite alternate; 
+    animation: grow 4s ease-in-out infinite alternate;
 }
 
 .text {
@@ -68,14 +67,21 @@ body {
     grid-column: 3/-1;
     grid-row: 1/2;
 }
+.reuse {
+    display: none;
+}
 
+.recycle {
+    display: none;
+}
 .reduce {
+    padding-top: 20px;
     color: #1D4925;
     font-family: Poppins;
     font-weight: 400;
     line-height: 180px;
     letter-spacing: 1vw;
-    font-size: 15vw;
+    font-size: 13vw;
     text-align: center;
 }
 
@@ -121,14 +127,31 @@ body {
 }
 
 .reduceWater {
-    width: 800px;
+
+    width: 280%;
 }
+
+.waterStroke {
+    animation: dash 10s linear infinite;
+    stroke-dasharray: 60;
+    stroke: #619DD8;
+    stroke-width: 20px;
+    stroke-miterlimit: 10;
+}
+
+@keyframes dash {
+    to {
+        stroke-dashoffset: 1000;
+    }
+}
+
 
 .reuseWater {
     display: none;
 }
+
 .recycleWater {
-    display:none;
+    display: none;
 }
 
 .YellowFlower {

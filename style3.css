@@ -1,11 +1,15 @@
-@media (max-width: 575px) {
+@media (max-width: 675px) {
+  * {
+    margin: 0;
+  }
   .container {
+    margin: 0;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 180px 1fr;
-        grid-template-columns: 180px 1fr;
-    -ms-grid-rows: (180px)[4];
-        grid-template-rows: repeat(4, 180px);
+    -ms-grid-columns: calc(100vh/4) 1fr;
+        grid-template-columns: calc(100vh/4) 1fr;
+    -ms-grid-rows: (calc(100vh/4))[4];
+        grid-template-rows: repeat(4, calc(100vh/4));
   }
   .reuse {
     display: none;
@@ -14,15 +18,15 @@
     background-color: #8E8E8E;
   }
   .recycle {
-    margin-top: 20px;
-    padding: 0 10px;
+    width: 100%;
+    padding: 40px 0 0 30px;
     display: block;
     color: #2D2D2D;
     font-family: Hepta Slab;
     font-weight: 800;
-    line-height: 70px;
+    line-height: 80px;
     letter-spacing: 1vw;
-    font-size: 14vw;
+    font-size: 11vw;
     text-align: left;
     -webkit-hyphens: auto;
         -ms-hyphens: auto;
@@ -66,8 +70,8 @@
   }
   @-webkit-keyframes rotate {
     0% {
-      -webkit-transform: rotate(180deg);
-              transform: rotate(180deg);
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
     }
     100% {
       -webkit-transform: rotate(0deg);
@@ -76,8 +80,8 @@
   }
   @keyframes rotate {
     0% {
-      -webkit-transform: rotate(180deg);
-              transform: rotate(180deg);
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
     }
     100% {
       -webkit-transform: rotate(0deg);
@@ -90,12 +94,20 @@
   .water {
     grid-column: 2/-1;
   }
-  .reuseWater {
+  .reduceWater {
     display: none;
+  }
+  .waterStroke {
+    -webkit-animation: 0s;
+            animation: 0s;
   }
   .recycleWater {
     display: block;
-    width: 340px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .water {
+    background-color: #424217;
   }
   .heart {
     display: none;
